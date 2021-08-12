@@ -1,0 +1,27 @@
+.header {
+	background-color: rgb(145, 89, 7);
+
+	&__nav {
+		margin: 0 auto;
+		padding: 0 1rem;
+		max-width: 75rem;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		&__list {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			.option {
+				margin-left: 10px;
+
+				&__link {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+}

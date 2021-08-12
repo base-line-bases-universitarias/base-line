@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Esta es una swuit de pruebas Debe hacer render del componente Footer 1`] = `
+<div
+  className="footer"
+>
+  <nav
+    className="footer__nav"
+  >
+    <ul
+      className="footer__nav__list"
+    >
+      <li
+        className="option"
+      >
+        <NavLink
+          activeClassName="active"
+          className="option__link"
+          exact={true}
+          to="/"
+        >
+          Inicio
+        </NavLink>
+      </li>
+      <li
+        className="option"
+      >
+        <NavLink
+          activeClassName="active"
+          className="option__link"
+          exact={true}
+          to="/contactenos"
+        >
+          Contactenos
+        </NavLink>
+      </li>
+      <li
+        className="option"
+      >
+        <NavLink
+          activeClassName="active"
+          className="option__link"
+          exact={true}
+          to="/login"
+        >
+          Login
+        </NavLink>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;

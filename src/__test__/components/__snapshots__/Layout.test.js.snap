@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Esta es una swuit de pruebas Debe hacer render del componente Layout 1`] = `
+<Fragment>
+  <Header />
+  <Footer />
+</Fragment>
+`;

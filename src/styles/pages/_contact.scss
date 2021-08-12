@@ -1,0 +1,14 @@
+.contact {
+	border: 1px solid red;
+
+	&__container {
+		margin: 0 auto;
+		padding: 0 1rem;
+		max-width: 75rem;
+		height: 879px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
