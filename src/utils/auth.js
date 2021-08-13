@@ -1,6 +1,8 @@
 import Axios from 'axios';
 
-const TOKEN_KEY = 'TEST_TOKEN';
+import routes from '../config/index';
+
+const TOKEN_KEY = routes.auth.keyToken;
 
 export const setToken = (token) => {
 	localStorage.setItem(TOKEN_KEY, token);
@@ -14,14 +16,20 @@ export const deleteToken = () => {
 	localStorage.removeItem(TOKEN_KEY);
 };
 
+const compareRoute = (routeAuth, config) =>
+	routeAuth.every((item) => {
+		return item.route !== config.url;
+	});
+
 export const initAxiosInterceptors = () => {
 	Axios.interceptors.request.use((config) => {
 		const token = getToken();
+		const routeAuth = routes.services.filter((item) => item.auth === true);
+		const flag = compareRoute(routeAuth, config);
 
-		if (token) {
+		if (token && !flag) {
 			config.headers.Authorization = `bearer ${token}`;
 		}
-
 		return config;
 	});
 
@@ -30,9 +38,11 @@ export const initAxiosInterceptors = () => {
 		(error) => {
 			if (error.response) {
 				switch (error.response.status) {
-					// case 401:
-					// 	window.location = '/login';
-					// 	break;
+					case 401:
+						window.location = '/login';
+						break;
+					case 404:
+						return Promise.reject(error.message);
 					default:
 						return Promise.reject(error);
 				}

@@ -46,7 +46,8 @@ const axiosFetchAction = async (
 				type: errorType,
 				payload: error,
 			});
-			return Promise.reject('Error Status Code:' + error.response.status);
+
+			return Promise.reject('Error Status Code:' + error.message);
 		}
 	}
 };

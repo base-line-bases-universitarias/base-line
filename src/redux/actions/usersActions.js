@@ -1,7 +1,9 @@
 import { types } from '../types/index';
 import axiosFetchAction from '../../utils/axiosFetchActions';
 
-const url = 'https://jsonplaceholder.typicode.com/users';
+import config from '../../config';
+
+const url = config.services[0].route;
 const method = 'GET';
 const loadingType = types.USERS.LOADING;
 const dataType = types.USERS.GET_USERS;

@@ -8,10 +8,6 @@ import App from './routes/App';
 
 import './styles/styles.scss';
 
-import dotenv from 'dotenv';
-
-console.log(dotenv.config());
-
 ReactDOM.render(
 	<Provider store={store}>
 		<App />

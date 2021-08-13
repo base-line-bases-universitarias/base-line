@@ -5,7 +5,12 @@ const Modal = ({ handleClickCloseModal }) => {
 	return ReactDOM.createPortal(
 		<div className='modal'>
 			<div className='modal__container'>
-				<button onClick={handleClickCloseModal}>Cerrar</button>
+				<button
+					className='modal__container__button'
+					onClick={handleClickCloseModal}
+				>
+					Cerrar
+				</button>
 				<p>Este es un modal</p>
 			</div>
 		</div>,

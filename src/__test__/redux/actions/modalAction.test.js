@@ -18,5 +18,8 @@ describe('characterActions', () => {
 		// expect(store.dispatch(showModalAction())).toBe({
 		// 	type: types.MODAL.SHOW_MODAL,
 		// });
+		// console.log(store.getState());
+		// console.log(store.dispatch({ type: types.MODAL.SHOW_MODAL }));
+		// console.log(showModalAction());
 	});
 });

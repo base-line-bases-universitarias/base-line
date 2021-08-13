@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Bases Universitarias el empleo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Contents
 
-## Available Scripts
+- Sumary
+- Architecture
+- Technologies
+- Tools
+- Testing
+- Deploy development
+- Deploy production
+- Recommendations
 
-In the project directory, you can run:
+## Sumary
 
-### `npm start`
+In this set of files you can find all the source code corresponding to the Frontend of the Bases Universitarias module of El Empleo, from a small description of the project to the details of each of the sub-modules or sub-files that make it up.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Architecture
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
 
-### `npm run build`
+| Tools            | Function             | Version | Documentation                                            |
+| ---------------- | -------------------- | ------- | -------------------------------------------------------- |
+| react            | Interfaces           | 17.0.2  | [react](https://es.reactjs.org/)                         |
+| react-dom        | React in the Browser | 17.0.2  | [react-dom](https://es.reactjs.org/)                     |
+| react-router-dom | Router               | 17.0.2  | [react-router-dom](https://es.reactjs.org/)              |
+| redux            | Global State         | 4.1.1   | [redux](https://redux.js.org/)                           |
+| react-redux      | Redux in React       | 7.2.4   | [react-redux ](https://react-redux.js.org/)              |
+| redux-thunk      | Middleware           | 2.3.0   | [redux-thunk](https://www.npmjs.com/package/redux-thunk) |
+| axios            | fetching data        | 0.21.1  | [axios](https://axios-http.com/docs/intro)               |
+| axios            | fetching data        | 0.21.1  | [axios](https://axios-http.com/docs/intro)               |
+| axios            | fetching data        | 0.21.1  | [axios](https://axios-http.com/docs/intro)               |
+| axios            | fetching data        | 0.21.1  | [axios](https://axios-http.com/docs/intro)               |
+| axios            | fetching data        | 0.21.1  | [axios](https://axios-http.com/docs/intro)               |
+| axios            | fetching data        | 0.21.1  | [axios](https://axios-http.com/docs/intro)               |
+| axios            | fetching data        | 0.21.1  | [axios](https://axios-http.com/docs/intro)               |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tools
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+In this set of files you can find all the source code corresponding to the Frontend of the Bases Universitarias module of El Empleo, from a small description of the project to the details of each of the sub-modules or sub-files that make it up.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Testing
 
-### `npm run eject`
+In this set of files you can find all the source code corresponding to the Frontend of the Bases Universitarias module of El Empleo, from a small description of the project to the details of each of the sub-modules or sub-files that make it up.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Deploy development
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In this set of files you can find all the source code corresponding to the Frontend of the Bases Universitarias module of El Empleo, from a small description of the project to the details of each of the sub-modules or sub-files that make it up.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Recommendations
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In this set of files you can find all the source code corresponding to the Frontend of the Bases Universitarias module of El Empleo, from a small description of the project to the details of each of the sub-modules or sub-files that make it up.
