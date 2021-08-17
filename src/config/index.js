@@ -4,7 +4,7 @@ const {
 	NODE_ENV,
 	REACT_APP_CHARACTERS_SERVICES,
 	REACT_APP_USERS_SERVICES,
-	REACT_APP_TODOS_SERVICES,
+	REACT_APP_IMAGES_SERVICES,
 } = process.env;
 
 const config = {
@@ -29,13 +29,8 @@ const config = {
 			auth: true,
 		},
 		{
-			key: 'REACT_APP_TODOS_SERVICES',
-			route: REACT_APP_TODOS_SERVICES,
-			auth: true,
-		},
-		{
-			key: 'REACT_APP_TODOS_SERVICES',
-			route: REACT_APP_TODOS_SERVICES,
+			key: 'REACT_APP_IMAGES_SERVICES',
+			route: REACT_APP_IMAGES_SERVICES,
 			auth: false,
 		},
 	],

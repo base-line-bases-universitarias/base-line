@@ -1,6 +1,5 @@
 .login {
 	border: 1px solid red;
-	background-color: blue;
 	&__container {
 		margin: 0 auto;
 		padding: 0 1rem;
@@ -10,5 +9,50 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+
+		&__slider {
+			margin-top: 50px;
+			max-width: 75rem;
+			width: 80%;
+			padding: 20px 30px;
+
+			.tns-outer {
+				position: relative;
+				.tns-controls {
+					position: absolute;
+					width: calc(100% + 50px);
+					height: 70px;
+					top: calc(50% - 35px);
+					left: -25px;
+					display: flex;
+					justify-content: space-between;
+
+					button {
+						width: 25px;
+						background-color: rgba(38, 35, 35, 0.638);
+						border: none;
+						border-radius: 2px;
+
+						&:hover {
+							background-color: rgba(26, 20, 20, 0.761);
+						}
+					}
+				}
+			}
+
+			@media (max-width: 500px) {
+				padding: 0px;
+				width: 90%;
+			}
+		}
+	}
+}
+
+.container-image {
+	padding: 10px;
+	text-align: center;
+
+	@media (max-width: 500px) {
+		padding: 0px;
 	}
 }
