@@ -18,6 +18,7 @@ const Home = ({
 	const { character, loading, error } = characters;
 	const handleClickOpenModal = () => {
 		showModalAction();
+		console.log('hello!!!');
 	};
 
 	const handleClickCloseModal = () => {
