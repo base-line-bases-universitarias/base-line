@@ -40,7 +40,7 @@ const Home = ({
 	return (
 		<div className='home'>
 			<div className='home__container'>
-				<p className='home__container__title'>Home</p>
+				<p className='home__container__title'>Home NEWWWWWWWWW</p>
 				{!show_modal && (
 					<button onClick={handleClickOpenModal}>Click me</button>
 				)}
