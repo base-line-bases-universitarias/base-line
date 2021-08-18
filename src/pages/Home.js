@@ -35,6 +35,8 @@ const Home = ({
 		getCharactersData();
 	}, [getCharactersData]);
 
+	console.log(process.env.PUBLIC_URL);
+
 	return (
 		<div className='home'>
 			<div className='home__container'>
