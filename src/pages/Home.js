@@ -18,7 +18,6 @@ const Home = ({
 	const { character, loading, error } = characters;
 	const handleClickOpenModal = () => {
 		showModalAction();
-		console.log('hello!!!');
 	};
 
 	const handleClickCloseModal = () => {
@@ -35,14 +34,12 @@ const Home = ({
 		getCharactersData();
 	}, [getCharactersData]);
 
-	console.log(process.env.PUBLIC_URL);
-
 	return (
 		<div className='home'>
 			<div className='home__container'>
-				<p className='home__container__title'>Home NEWWWWWWWWW</p>
+				<p className='home__container__title'>Home NEWWWWWWWWWWWWWWWWWW</p>
 				{!show_modal && (
-					<button onClick={handleClickOpenModal}>Click me</button>
+					<button onClick={handleClickOpenModal}>Dame Click!</button>
 				)}
 				<CharacterList loading={loading} character={character} error={error} />
 			</div>

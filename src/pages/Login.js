@@ -62,8 +62,6 @@ const Login = ({ photos, getPhotos }) => {
 		getPhotosData();
 	}, [getPhotosData]);
 
-	console.log(photos.loading);
-
 	return (
 		<div className='login'>
 			<div className='login__container'>
