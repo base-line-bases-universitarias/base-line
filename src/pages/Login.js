@@ -66,33 +66,6 @@ const Login = ({ photos, getPhotos }) => {
 		<div className='login'>
 			<div className='login__container'>
 				<p> Login</p>
-				<div className='login__container__slider'>
-					{photos.loading ? (
-						<p>Loading</p>
-					) : (
-						// <Fragment>
-						// 	<TinySlider settings={settings}>
-						// 		{imgs.map((el, index) => (
-						// 			<div key={index} className='container-image'>
-						// 				<img
-						// 					className={`tns-lazy-img`}
-						// 					src={loadingImage}
-						// 					data-src={el}
-						// 					alt=''
-						// 					style={imgStyles}
-						// 				/>
-						// 				<p>
-						// 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						// 					Eaque suscipit ullam porro minima nam vitae numquam
-						// 					laudantium commodi illum accusamus qui voluptatem.
-						// 				</p>
-						// 			</div>
-						// 		))}
-						// 	</TinySlider>
-						// </Fragment>
-						<div>{JSON.stringify(imgs)}</div>
-					)}
-				</div>
 			</div>
 		</div>
 	);

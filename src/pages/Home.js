@@ -37,9 +37,9 @@ const Home = ({
 	return (
 		<div className='home'>
 			<div className='home__container'>
-				<p className='home__container__title'>Home NEWWWWWWWWWWWWWWWWWW</p>
+				<p className='home__container__title'>Home</p>
 				{!show_modal && (
-					<button onClick={handleClickOpenModal}>Dame Click!</button>
+					<button onClick={handleClickOpenModal}>Click me</button>
 				)}
 				<CharacterList loading={loading} character={character} error={error} />
 			</div>
