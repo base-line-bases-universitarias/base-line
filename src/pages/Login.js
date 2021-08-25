@@ -2,6 +2,8 @@ import React, { Fragment, useCallback, useEffect } from 'react';
 import { connect } from 'react-redux';
 import TinySlider from 'tiny-slider-react';
 
+import Formulario from '../components/Formulario';
+
 import { getPhotos } from '../redux/actions/photosAction';
 import '../styles/pages/_login.scss';
 
@@ -21,7 +23,7 @@ const Login = ({ photos, getPhotos }) => {
 		autoplayButtonOutput: false,
 		speed: 300,
 		responsive: {
-			420: {
+			470: {
 				items: 2,
 			},
 			800: {
@@ -49,7 +51,7 @@ const Login = ({ photos, getPhotos }) => {
   R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
 
 	const imgStyles = {
-		width: '90%',
+		width: '250px',
 		height: '320px',
 		objectFit: 'cover',
 	};
@@ -66,6 +68,22 @@ const Login = ({ photos, getPhotos }) => {
 		<div className='login'>
 			<div className='login__container'>
 				<p> Login</p>
+				<Formulario />
+				<div className='login__container__slider'>
+					<TinySlider settings={settings}>
+						{imgs.map((el, index) => (
+							<div key={index} className='container-image'>
+								<img
+									className={`tns-lazy-img`}
+									src={loadingImage}
+									data-src={el}
+									alt=''
+									style={imgStyles}
+								/>
+							</div>
+						))}
+					</TinySlider>
+				</div>
 			</div>
 		</div>
 	);
