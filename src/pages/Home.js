@@ -1,6 +1,7 @@
 import React, { useEffect, useCallback } from 'react';
 import { connect } from 'react-redux';
 
+import Banner from '../components/Banner';
 import Modal from '../components/Modal';
 import CharacterList from '../components/CharacterList';
 
@@ -37,6 +38,7 @@ const Home = ({
 	return (
 		<div className='home'>
 			<div className='home__container'>
+				<Banner />
 				<p className='home__container__title'>Home</p>
 				{!show_modal && (
 					<button onClick={handleClickOpenModal}>Click me</button>

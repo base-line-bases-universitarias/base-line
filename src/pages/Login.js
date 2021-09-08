@@ -1,4 +1,4 @@
-import React, { Fragment, useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { connect } from 'react-redux';
 import TinySlider from 'tiny-slider-react';
 
@@ -9,7 +9,7 @@ import '../styles/pages/_login.scss';
 
 const Login = ({ photos, getPhotos }) => {
 	const settings = {
-		lazyload: true,
+		lazyload: false,
 		nav: false,
 		mouseDrag: true,
 		controls: true,
@@ -17,7 +17,7 @@ const Login = ({ photos, getPhotos }) => {
 		controlsText: ['<', '>'],
 		loop: true,
 		items: 1,
-		gutter: 5,
+		gutter: 3,
 		center: true,
 		autoplay: true,
 		autoplayButtonOutput: false,
@@ -32,24 +32,6 @@ const Login = ({ photos, getPhotos }) => {
 		},
 	};
 
-	const imgs = [
-		'https://via.placeholder.com/600/92c952',
-		'https://via.placeholder.com/600/771796',
-		'https://via.placeholder.com/600/24f355',
-		'https://via.placeholder.com/600/d32776',
-		'https://via.placeholder.com/600/f66b97',
-		'https://via.placeholder.com/600/56a8c2',
-		'https://via.placeholder.com/600/b0f7cc',
-		'https://via.placeholder.com/600/51aa97',
-		'https://via.placeholder.com/600/810b14',
-		'https://via.placeholder.com/600/66b7d2',
-		'https://via.placeholder.com/600/197d29',
-		'https://via.placeholder.com/600/f9cee5',
-	];
-
-	const loadingImage = `data:image/gif;base64,\
-  R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
-
 	const imgStyles = {
 		width: '250px',
 		height: '320px',
@@ -57,8 +39,10 @@ const Login = ({ photos, getPhotos }) => {
 	};
 
 	const getPhotosData = useCallback(() => {
-		getPhotos();
-	}, [getPhotos]);
+		if (photos.photos.length === 0) {
+			getPhotos();
+		}
+	}, [getPhotos, photos.photos]);
 
 	useEffect(() => {
 		getPhotosData();
@@ -69,21 +53,28 @@ const Login = ({ photos, getPhotos }) => {
 			<div className='login__container'>
 				<p> Login</p>
 				<Formulario />
-				<div className='login__container__slider'>
-					<TinySlider settings={settings}>
-						{imgs.map((el, index) => (
-							<div key={index} className='container-image'>
-								<img
-									className={`tns-lazy-img`}
-									src={loadingImage}
-									data-src={el}
-									alt=''
-									style={imgStyles}
-								/>
-							</div>
-						))}
-					</TinySlider>
-				</div>
+				{!photos.loading ? (
+					<div className='login__container__slider'>
+						<TinySlider settings={settings}>
+							{photos.photos
+								.filter((ele, index) => index <= 60)
+								.map((el, index) => (
+									<div key={index} className='container-image'>
+										<img
+											className='image tns-lazy-img'
+											src={el.url}
+											data-src={el.url}
+											alt=''
+											style={imgStyles}
+										/>
+										<p>hello {index}</p>
+									</div>
+								))}
+						</TinySlider>
+					</div>
+				) : (
+					<p>Cargando...</p>
+				)}
 			</div>
 		</div>
 	);

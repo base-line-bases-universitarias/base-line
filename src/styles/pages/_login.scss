@@ -1,5 +1,4 @@
 .login {
-	border: 1px solid red;
 	&__container {
 		margin: 0 auto;
 		padding: 0 1rem;
@@ -51,8 +50,4 @@
 .container-image {
 	padding: 10px;
 	text-align: center;
-
-	@media (max-width: 500px) {
-		padding: 0px;
-	}
 }
